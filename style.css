@@ -1,0 +1,418 @@
+body {
+  background: linear-gradient(135deg, #6ecbf5, #c252e1, #586ae2, #2a2356);
+  color: white;
+}
+/* Hero Section */
+.KontainerHero {
+  background: url("img/pngtree-top-view-of-a-technician-repairing-a-smartphone-image_15665835.jpg")
+    no-repeat center center/cover fixed;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 54px;
+}
+
+.satu {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 0px 30px grey;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 0px 0px 10px cyan, 0px 0px 20px cyan, 0px 0px 30px cyan,
+    0px 0px 40px cyan;
+}
+h1:hover {
+  text-shadow: 0px 0px 10px lightcoral, 0px 0px 20px lightcoral,
+    0px 0px 30px lightcoral, 0px 0px 40px lightcoral;
+}
+
+.ratakirikanan {
+  text-align: justify;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .satu h1 {
+    font-size: 2rem;
+  }
+
+  .satu h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .satu h1 {
+    font-size: 1.5rem;
+  }
+
+  .satu h5 {
+    font-size: 0.9rem;
+  }
+}
+
+/* Image Grid Section */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-column img:hover {
+  transform: scale(1.1);
+}
+
+.reza {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.developer {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(56, 53, 50, 0.31);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 50px rgb(0, 0, 0);
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid;
+}
+.developer:hover {
+  border: 2px solid rgb(255, 0, 234);
+  box-shadow: 0px 0px 50px rgb(255, 0, 234), 0px 0px 10px rgb(255, 0, 234);
+}
+
+.developer h3 {
+  margin-top: 10px;
+}
+
+.developer p {
+  margin: 10px 0 0;
+  text-align: justify;
+}
+
+.developer-img {
+  flex: 1;
+  width: 200px;
+  height: auto;
+  margin-left: 200px;
+  border-radius: 10px;
+  border: 2px solid;
+  box-shadow: 0px 0px 50px black, 0px 0px 10px black;
+}
+.developer-img:hover {
+  border: 1px solid rgb(255, 0, 234);
+  box-shadow: 0px 0px 50px rgb(255, 0, 234), 0px 0px 10px rgb(255, 0, 234) inset;
+}
+
+@media (max-width: 768px) {
+  .reza {
+    flex-direction: column;
+  }
+
+  .developer {
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  .developer-img {
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-column {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+.comments-section {
+  margin-top: 20px;
+  padding: 30px;
+}
+.comment-form {
+  margin-bottom: 20px;
+}
+.comment-box {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.comment-list {
+  margin-top: 20px;
+}
+.comment-item {
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* From Uiverse.io by Gaurang7717 */
+.Btns {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGs {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #00d757;
+  background: #00d757;
+  background: #00d757;
+  background: #00d757;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btns:hover .BGs {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btns:hover .svgContainers {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+.social-media {
+  padding: 30px;
+}
+.instagram {
+  display: flex;
+  padding-top: 10px;
+  gap: 20px;
+}
+
+.instagram h6 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.whatsapp {
+  display: flex;
+  padding-bottom: 10px;
+  gap: 20px;
+}
+.whatsapp h6 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.keahlian {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.progress {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.sudutBulat {
+  border-radius: 10px;
+}
+.img-fluid {
+  transition: 0.2s ease-in;
+  filter: grayscale(100%);
+}
+.img-fluid:hover {
+  filter: grayscale(0%);
+}
+
+/* From Uiverse.io by abrahamcalsin */
+.komen {
+  width: 280px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+
+.komen:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ff01fb;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.komen:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.komen span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.komen:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
